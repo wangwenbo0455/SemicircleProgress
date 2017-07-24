@@ -7,6 +7,7 @@
 //
 
 #import "WBCircle.h"
+#import "UIColor+Hex.h"
 #define CircleDegreeToRadian(d) ((d)*M_PI)/180.0
 
 static CGFloat endPointMargin = 1.0f;
@@ -58,10 +59,10 @@ static CGFloat endPointMargin = 1.0f;
     _progressLayer.strokeEnd = 0;
     CAGradientLayer *gradientLayer =  [CAGradientLayer layer];
     gradientLayer.frame = self.bounds;
-    [gradientLayer setColors:@[(id)[UIColor purpleColor].CGColor,
-                               (id)[UIColor redColor].CGColor]];    //   渐变的颜色数组   自己填写
+    [gradientLayer setColors:@[(id)[UIColor colorWithHexString:@"#137eff"].CGColor,
+                               (id)[UIColor colorWithHexString:@"#9200ff"].CGColor,(id)[UIColor colorWithHexString:@"#f50b38"].CGColor]];    //   渐变的颜色数组   自己填写
     gradientLayer.startPoint = CGPointMake(0, 0);
-    gradientLayer.endPoint = CGPointMake(0, 1);
+    gradientLayer.endPoint = CGPointMake(1, 0);
     [gradientLayer setMask:_progressLayer];
     [self.layer addSublayer:gradientLayer];
     

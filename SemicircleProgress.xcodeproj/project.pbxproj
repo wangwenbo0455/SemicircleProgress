@@ -14,6 +14,7 @@
 		0DBBD2D71F258B330090CB67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DBBD2D61F258B330090CB67 /* Assets.xcassets */; };
 		0DBBD2DA1F258B330090CB67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DBBD2D81F258B330090CB67 /* LaunchScreen.storyboard */; };
 		0DBBD2E31F258B500090CB67 /* WBCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DBBD2E21F258B500090CB67 /* WBCircle.m */; };
+		0DBBD2E61F25CCB90090CB67 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DBBD2E51F25CCB90090CB67 /* UIColor+Hex.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		0DBBD2DB1F258B330090CB67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0DBBD2E11F258B500090CB67 /* WBCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBCircle.h; sourceTree = "<group>"; };
 		0DBBD2E21F258B500090CB67 /* WBCircle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBCircle.m; sourceTree = "<group>"; };
+		0DBBD2E41F25CCB90090CB67 /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
+		0DBBD2E51F25CCB90090CB67 /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +68,8 @@
 				0DBBD2CE1F258B330090CB67 /* AppDelegate.m */,
 				0DBBD2E11F258B500090CB67 /* WBCircle.h */,
 				0DBBD2E21F258B500090CB67 /* WBCircle.m */,
+				0DBBD2E41F25CCB90090CB67 /* UIColor+Hex.h */,
+				0DBBD2E51F25CCB90090CB67 /* UIColor+Hex.m */,
 				0DBBD2D01F258B330090CB67 /* ViewController.h */,
 				0DBBD2D11F258B330090CB67 /* ViewController.m */,
 				0DBBD2D31F258B330090CB67 /* Main.storyboard */,
@@ -156,6 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0DBBD2D21F258B330090CB67 /* ViewController.m in Sources */,
+				0DBBD2E61F25CCB90090CB67 /* UIColor+Hex.m in Sources */,
 				0DBBD2CF1F258B330090CB67 /* AppDelegate.m in Sources */,
 				0DBBD2CC1F258B330090CB67 /* main.m in Sources */,
 				0DBBD2E31F258B500090CB67 /* WBCircle.m in Sources */,
@@ -315,6 +321,7 @@
 				0DBBD2E01F258B330090CB67 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
