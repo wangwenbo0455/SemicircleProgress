@@ -7,7 +7,7 @@
 //
 
 #import "WBCircle.h"
-#import "UIColor+Hex.h"
+#import "UIColor+FastKit.h"
 #define CircleDegreeToRadian(d) ((d)*M_PI)/180.0
 
 static CGFloat endPointMargin = 1.0f;
@@ -98,13 +98,10 @@ static CGFloat endPointMargin = 1.0f;
         CGFloat startAngel = (startAngle+ perAngle * i);
         CGFloat endAngel   = startAngel + perAngle/5;
         float radius = (self.bounds.size.width-_lineWidth*3)/2.0 ;
-        
         UIBezierPath *tickPath = [UIBezierPath bezierPathWithArcCenter:CGPointMake(centerX, centerY) radius:radius startAngle:startAngel endAngle:endAngel clockwise:YES];
         CAShapeLayer *perLayer = [CAShapeLayer layer];
-        
-        perLayer.strokeColor = [UIColor cyanColor].CGColor;
+        perLayer.strokeColor = [UIColor colorWithHexString:@"#eeeeee"].CGColor;
         perLayer.lineWidth   = _lineWidth;
-        
         perLayer.path = tickPath.CGPath;
         [self.layer addSublayer:perLayer];
     }

@@ -14,7 +14,25 @@
 		0DBBD2D71F258B330090CB67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DBBD2D61F258B330090CB67 /* Assets.xcassets */; };
 		0DBBD2DA1F258B330090CB67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DBBD2D81F258B330090CB67 /* LaunchScreen.storyboard */; };
 		0DBBD2E31F258B500090CB67 /* WBCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DBBD2E21F258B500090CB67 /* WBCircle.m */; };
-		0DBBD2E61F25CCB90090CB67 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DBBD2E51F25CCB90090CB67 /* UIColor+Hex.m */; };
+		0DBBD2E91F25F2180090CB67 /* WBCircleProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DBBD2E81F25F2180090CB67 /* WBCircleProgress.m */; };
+		0DBBD3171F25F9B10090CB67 /* NSArray+FastKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DBBD2F21F25F9B10090CB67 /* NSArray+FastKit.m */; };
+		0DBBD3181F25F9B10090CB67 /* NSDate+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DBBD2F41F25F9B10090CB67 /* NSDate+Category.m */; };
+		0DBBD3191F25F9B10090CB67 /* NSDate+FastKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DBBD2F61F25F9B10090CB67 /* NSDate+FastKit.m */; };
+		0DBBD31A1F25F9B10090CB67 /* NSDateFormatter+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DBBD2F81F25F9B10090CB67 /* NSDateFormatter+Category.m */; };
+		0DBBD31B1F25F9B10090CB67 /* NSDictionary+FastKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DBBD2FA1F25F9B10090CB67 /* NSDictionary+FastKit.m */; };
+		0DBBD31C1F25F9B10090CB67 /* NSFileManager+FastKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DBBD2FC1F25F9B10090CB67 /* NSFileManager+FastKit.m */; };
+		0DBBD31D1F25F9B10090CB67 /* NSString+FastKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DBBD2FE1F25F9B10090CB67 /* NSString+FastKit.m */; };
+		0DBBD31E1F25F9B10090CB67 /* NSTimer+FastKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DBBD3001F25F9B10090CB67 /* NSTimer+FastKit.m */; };
+		0DBBD31F1F25F9B10090CB67 /* CALayer+FastKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DBBD3031F25F9B10090CB67 /* CALayer+FastKit.m */; };
+		0DBBD3201F25F9B10090CB67 /* CGUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DBBD3051F25F9B10090CB67 /* CGUtilities.m */; };
+		0DBBD3211F25F9B10090CB67 /* UIButton+FastKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DBBD3081F25F9B10090CB67 /* UIButton+FastKit.m */; };
+		0DBBD3221F25F9B10090CB67 /* UIColor+FastKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DBBD30A1F25F9B10090CB67 /* UIColor+FastKit.m */; };
+		0DBBD3231F25F9B10090CB67 /* UIDevice+FastKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DBBD30C1F25F9B10090CB67 /* UIDevice+FastKit.m */; };
+		0DBBD3241F25F9B10090CB67 /* UIImage+FastKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DBBD30E1F25F9B10090CB67 /* UIImage+FastKit.m */; };
+		0DBBD3251F25F9B10090CB67 /* UILabel+FastKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DBBD3101F25F9B10090CB67 /* UILabel+FastKit.m */; };
+		0DBBD3261F25F9B10090CB67 /* UIScrollView+FastKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DBBD3121F25F9B10090CB67 /* UIScrollView+FastKit.m */; };
+		0DBBD3271F25F9B10090CB67 /* UITextView+FastKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DBBD3141F25F9B10090CB67 /* UITextView+FastKit.m */; };
+		0DBBD3281F25F9B10090CB67 /* UIView+FastKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DBBD3161F25F9B10090CB67 /* UIView+FastKit.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,8 +48,46 @@
 		0DBBD2DB1F258B330090CB67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0DBBD2E11F258B500090CB67 /* WBCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBCircle.h; sourceTree = "<group>"; };
 		0DBBD2E21F258B500090CB67 /* WBCircle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBCircle.m; sourceTree = "<group>"; };
-		0DBBD2E41F25CCB90090CB67 /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
-		0DBBD2E51F25CCB90090CB67 /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
+		0DBBD2E71F25F2180090CB67 /* WBCircleProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBCircleProgress.h; sourceTree = "<group>"; };
+		0DBBD2E81F25F2180090CB67 /* WBCircleProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBCircleProgress.m; sourceTree = "<group>"; };
+		0DBBD2EE1F25F9B10090CB67 /* FastKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FastKit.h; sourceTree = "<group>"; };
+		0DBBD2EF1F25F9B10090CB67 /* FastKitMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FastKitMacro.h; sourceTree = "<group>"; };
+		0DBBD2F11F25F9B10090CB67 /* NSArray+FastKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+FastKit.h"; sourceTree = "<group>"; };
+		0DBBD2F21F25F9B10090CB67 /* NSArray+FastKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+FastKit.m"; sourceTree = "<group>"; };
+		0DBBD2F31F25F9B10090CB67 /* NSDate+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Category.h"; sourceTree = "<group>"; };
+		0DBBD2F41F25F9B10090CB67 /* NSDate+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Category.m"; sourceTree = "<group>"; };
+		0DBBD2F51F25F9B10090CB67 /* NSDate+FastKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+FastKit.h"; sourceTree = "<group>"; };
+		0DBBD2F61F25F9B10090CB67 /* NSDate+FastKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+FastKit.m"; sourceTree = "<group>"; };
+		0DBBD2F71F25F9B10090CB67 /* NSDateFormatter+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDateFormatter+Category.h"; sourceTree = "<group>"; };
+		0DBBD2F81F25F9B10090CB67 /* NSDateFormatter+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDateFormatter+Category.m"; sourceTree = "<group>"; };
+		0DBBD2F91F25F9B10090CB67 /* NSDictionary+FastKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+FastKit.h"; sourceTree = "<group>"; };
+		0DBBD2FA1F25F9B10090CB67 /* NSDictionary+FastKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+FastKit.m"; sourceTree = "<group>"; };
+		0DBBD2FB1F25F9B10090CB67 /* NSFileManager+FastKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+FastKit.h"; sourceTree = "<group>"; };
+		0DBBD2FC1F25F9B10090CB67 /* NSFileManager+FastKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+FastKit.m"; sourceTree = "<group>"; };
+		0DBBD2FD1F25F9B10090CB67 /* NSString+FastKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+FastKit.h"; sourceTree = "<group>"; };
+		0DBBD2FE1F25F9B10090CB67 /* NSString+FastKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+FastKit.m"; sourceTree = "<group>"; };
+		0DBBD2FF1F25F9B10090CB67 /* NSTimer+FastKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+FastKit.h"; sourceTree = "<group>"; };
+		0DBBD3001F25F9B10090CB67 /* NSTimer+FastKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+FastKit.m"; sourceTree = "<group>"; };
+		0DBBD3021F25F9B10090CB67 /* CALayer+FastKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+FastKit.h"; sourceTree = "<group>"; };
+		0DBBD3031F25F9B10090CB67 /* CALayer+FastKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+FastKit.m"; sourceTree = "<group>"; };
+		0DBBD3041F25F9B10090CB67 /* CGUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGUtilities.h; sourceTree = "<group>"; };
+		0DBBD3051F25F9B10090CB67 /* CGUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGUtilities.m; sourceTree = "<group>"; };
+		0DBBD3071F25F9B10090CB67 /* UIButton+FastKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+FastKit.h"; sourceTree = "<group>"; };
+		0DBBD3081F25F9B10090CB67 /* UIButton+FastKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+FastKit.m"; sourceTree = "<group>"; };
+		0DBBD3091F25F9B10090CB67 /* UIColor+FastKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+FastKit.h"; sourceTree = "<group>"; };
+		0DBBD30A1F25F9B10090CB67 /* UIColor+FastKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+FastKit.m"; sourceTree = "<group>"; };
+		0DBBD30B1F25F9B10090CB67 /* UIDevice+FastKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+FastKit.h"; sourceTree = "<group>"; };
+		0DBBD30C1F25F9B10090CB67 /* UIDevice+FastKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+FastKit.m"; sourceTree = "<group>"; };
+		0DBBD30D1F25F9B10090CB67 /* UIImage+FastKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+FastKit.h"; sourceTree = "<group>"; };
+		0DBBD30E1F25F9B10090CB67 /* UIImage+FastKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FastKit.m"; sourceTree = "<group>"; };
+		0DBBD30F1F25F9B10090CB67 /* UILabel+FastKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+FastKit.h"; sourceTree = "<group>"; };
+		0DBBD3101F25F9B10090CB67 /* UILabel+FastKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+FastKit.m"; sourceTree = "<group>"; };
+		0DBBD3111F25F9B10090CB67 /* UIScrollView+FastKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+FastKit.h"; sourceTree = "<group>"; };
+		0DBBD3121F25F9B10090CB67 /* UIScrollView+FastKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+FastKit.m"; sourceTree = "<group>"; };
+		0DBBD3131F25F9B10090CB67 /* UITextView+FastKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+FastKit.h"; sourceTree = "<group>"; };
+		0DBBD3141F25F9B10090CB67 /* UITextView+FastKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+FastKit.m"; sourceTree = "<group>"; };
+		0DBBD3151F25F9B10090CB67 /* UIView+FastKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FastKit.h"; sourceTree = "<group>"; };
+		0DBBD3161F25F9B10090CB67 /* UIView+FastKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FastKit.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,8 +124,9 @@
 				0DBBD2CE1F258B330090CB67 /* AppDelegate.m */,
 				0DBBD2E11F258B500090CB67 /* WBCircle.h */,
 				0DBBD2E21F258B500090CB67 /* WBCircle.m */,
-				0DBBD2E41F25CCB90090CB67 /* UIColor+Hex.h */,
-				0DBBD2E51F25CCB90090CB67 /* UIColor+Hex.m */,
+				0DBBD2E71F25F2180090CB67 /* WBCircleProgress.h */,
+				0DBBD2E81F25F2180090CB67 /* WBCircleProgress.m */,
+				0DBBD2ED1F25F9B10090CB67 /* FastKit */,
 				0DBBD2D01F258B330090CB67 /* ViewController.h */,
 				0DBBD2D11F258B330090CB67 /* ViewController.m */,
 				0DBBD2D31F258B330090CB67 /* Main.storyboard */,
@@ -87,6 +144,75 @@
 				0DBBD2CB1F258B330090CB67 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0DBBD2ED1F25F9B10090CB67 /* FastKit */ = {
+			isa = PBXGroup;
+			children = (
+				0DBBD2EE1F25F9B10090CB67 /* FastKit.h */,
+				0DBBD2EF1F25F9B10090CB67 /* FastKitMacro.h */,
+				0DBBD2F01F25F9B10090CB67 /* Foundation */,
+				0DBBD3011F25F9B10090CB67 /* Quartz */,
+				0DBBD3061F25F9B10090CB67 /* UIKit */,
+			);
+			path = FastKit;
+			sourceTree = "<group>";
+		};
+		0DBBD2F01F25F9B10090CB67 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				0DBBD2F11F25F9B10090CB67 /* NSArray+FastKit.h */,
+				0DBBD2F21F25F9B10090CB67 /* NSArray+FastKit.m */,
+				0DBBD2F31F25F9B10090CB67 /* NSDate+Category.h */,
+				0DBBD2F41F25F9B10090CB67 /* NSDate+Category.m */,
+				0DBBD2F51F25F9B10090CB67 /* NSDate+FastKit.h */,
+				0DBBD2F61F25F9B10090CB67 /* NSDate+FastKit.m */,
+				0DBBD2F71F25F9B10090CB67 /* NSDateFormatter+Category.h */,
+				0DBBD2F81F25F9B10090CB67 /* NSDateFormatter+Category.m */,
+				0DBBD2F91F25F9B10090CB67 /* NSDictionary+FastKit.h */,
+				0DBBD2FA1F25F9B10090CB67 /* NSDictionary+FastKit.m */,
+				0DBBD2FB1F25F9B10090CB67 /* NSFileManager+FastKit.h */,
+				0DBBD2FC1F25F9B10090CB67 /* NSFileManager+FastKit.m */,
+				0DBBD2FD1F25F9B10090CB67 /* NSString+FastKit.h */,
+				0DBBD2FE1F25F9B10090CB67 /* NSString+FastKit.m */,
+				0DBBD2FF1F25F9B10090CB67 /* NSTimer+FastKit.h */,
+				0DBBD3001F25F9B10090CB67 /* NSTimer+FastKit.m */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		0DBBD3011F25F9B10090CB67 /* Quartz */ = {
+			isa = PBXGroup;
+			children = (
+				0DBBD3021F25F9B10090CB67 /* CALayer+FastKit.h */,
+				0DBBD3031F25F9B10090CB67 /* CALayer+FastKit.m */,
+				0DBBD3041F25F9B10090CB67 /* CGUtilities.h */,
+				0DBBD3051F25F9B10090CB67 /* CGUtilities.m */,
+			);
+			path = Quartz;
+			sourceTree = "<group>";
+		};
+		0DBBD3061F25F9B10090CB67 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				0DBBD3071F25F9B10090CB67 /* UIButton+FastKit.h */,
+				0DBBD3081F25F9B10090CB67 /* UIButton+FastKit.m */,
+				0DBBD3091F25F9B10090CB67 /* UIColor+FastKit.h */,
+				0DBBD30A1F25F9B10090CB67 /* UIColor+FastKit.m */,
+				0DBBD30B1F25F9B10090CB67 /* UIDevice+FastKit.h */,
+				0DBBD30C1F25F9B10090CB67 /* UIDevice+FastKit.m */,
+				0DBBD30D1F25F9B10090CB67 /* UIImage+FastKit.h */,
+				0DBBD30E1F25F9B10090CB67 /* UIImage+FastKit.m */,
+				0DBBD30F1F25F9B10090CB67 /* UILabel+FastKit.h */,
+				0DBBD3101F25F9B10090CB67 /* UILabel+FastKit.m */,
+				0DBBD3111F25F9B10090CB67 /* UIScrollView+FastKit.h */,
+				0DBBD3121F25F9B10090CB67 /* UIScrollView+FastKit.m */,
+				0DBBD3131F25F9B10090CB67 /* UITextView+FastKit.h */,
+				0DBBD3141F25F9B10090CB67 /* UITextView+FastKit.m */,
+				0DBBD3151F25F9B10090CB67 /* UIView+FastKit.h */,
+				0DBBD3161F25F9B10090CB67 /* UIView+FastKit.m */,
+			);
+			path = UIKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,11 +286,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DBBD3201F25F9B10090CB67 /* CGUtilities.m in Sources */,
+				0DBBD31F1F25F9B10090CB67 /* CALayer+FastKit.m in Sources */,
+				0DBBD3281F25F9B10090CB67 /* UIView+FastKit.m in Sources */,
 				0DBBD2D21F258B330090CB67 /* ViewController.m in Sources */,
-				0DBBD2E61F25CCB90090CB67 /* UIColor+Hex.m in Sources */,
+				0DBBD3251F25F9B10090CB67 /* UILabel+FastKit.m in Sources */,
+				0DBBD31C1F25F9B10090CB67 /* NSFileManager+FastKit.m in Sources */,
+				0DBBD3231F25F9B10090CB67 /* UIDevice+FastKit.m in Sources */,
+				0DBBD3271F25F9B10090CB67 /* UITextView+FastKit.m in Sources */,
+				0DBBD31A1F25F9B10090CB67 /* NSDateFormatter+Category.m in Sources */,
+				0DBBD3241F25F9B10090CB67 /* UIImage+FastKit.m in Sources */,
+				0DBBD2E91F25F2180090CB67 /* WBCircleProgress.m in Sources */,
+				0DBBD3181F25F9B10090CB67 /* NSDate+Category.m in Sources */,
+				0DBBD3191F25F9B10090CB67 /* NSDate+FastKit.m in Sources */,
+				0DBBD3211F25F9B10090CB67 /* UIButton+FastKit.m in Sources */,
+				0DBBD31D1F25F9B10090CB67 /* NSString+FastKit.m in Sources */,
 				0DBBD2CF1F258B330090CB67 /* AppDelegate.m in Sources */,
+				0DBBD3221F25F9B10090CB67 /* UIColor+FastKit.m in Sources */,
 				0DBBD2CC1F258B330090CB67 /* main.m in Sources */,
+				0DBBD3261F25F9B10090CB67 /* UIScrollView+FastKit.m in Sources */,
+				0DBBD31E1F25F9B10090CB67 /* NSTimer+FastKit.m in Sources */,
 				0DBBD2E31F258B500090CB67 /* WBCircle.m in Sources */,
+				0DBBD3171F25F9B10090CB67 /* NSArray+FastKit.m in Sources */,
+				0DBBD31B1F25F9B10090CB67 /* NSDictionary+FastKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

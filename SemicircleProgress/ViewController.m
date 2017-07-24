@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import "WBCircle.h"
-
+#import "WBCircleProgress.h"
 @interface ViewController ()
 {
     WBCircle *_circle;
@@ -25,14 +25,29 @@
 }
 -(void)addCircle
 {
+    
+    
+    
     float lineWidth = 0.1*self.view.bounds.size.width;
     
     CGFloat margin = 15.0f;
     CGFloat circleWidth = [UIScreen mainScreen].bounds.size.width - 2*margin;
+    
+    
+    WBCircleProgress * circle = [[WBCircleProgress alloc]initWithFrame:CGRectMake(0, 0, circleWidth, circleWidth)];
+    circle.center = self.view.center;
+    circle.backgroundColor = [UIColor clearColor];
+    [self.view addSubview:circle];
+    
+    
+    
     _circle = [[WBCircle alloc] initWithFrame:CGRectMake(0, 0, circleWidth, circleWidth) lineWidth:lineWidth];
     _circle.progress = 0;
     _circle.center = self.view.center;
     [self.view addSubview:_circle];
+    
+
+
     
     UISlider *slider = [[UISlider alloc] initWithFrame:CGRectMake(50, CGRectGetMaxY(_circle.frame) + 50, self.view.bounds.size.width - 2*50, 30)];
     [slider addTarget:self action:@selector(sliderMethod:) forControlEvents:UIControlEventValueChanged];
