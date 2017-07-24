@@ -94,14 +94,18 @@ static CGFloat endPointMargin = 1.0f;
     CGFloat endAngle = 0;
     CGFloat  arc = endAngle-startAngle;
     CGFloat perAngle=arc/36;
+    
+    
+    CGFloat secondLineWigth = _lineWidth;//  线的长度，修改这个 需修改lineradius  酌情修改
+    
     for (NSInteger i = 0; i<= 36; i++) {
         CGFloat startAngel = (startAngle+ perAngle * i);
-        CGFloat endAngel   = startAngel + perAngle/5;
-        float radius = (self.bounds.size.width-_lineWidth*3)/2.0 ;
-        UIBezierPath *tickPath = [UIBezierPath bezierPathWithArcCenter:CGPointMake(centerX, centerY) radius:radius startAngle:startAngel endAngle:endAngel clockwise:YES];
+        CGFloat endAngel   = startAngel + perAngle/10;//  这里改宽度的比例，
+        float lineradius = radius-secondLineWigth;
+        UIBezierPath *tickPath = [UIBezierPath bezierPathWithArcCenter:CGPointMake(centerX, centerY) radius:lineradius startAngle:startAngel endAngle:endAngel clockwise:YES];
         CAShapeLayer *perLayer = [CAShapeLayer layer];
         perLayer.strokeColor = [UIColor colorWithHexString:@"#eeeeee"].CGColor;
-        perLayer.lineWidth   = _lineWidth;
+        perLayer.lineWidth   = secondLineWigth;
         perLayer.path = tickPath.CGPath;
         [self.layer addSublayer:perLayer];
     }
