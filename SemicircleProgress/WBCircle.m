@@ -90,6 +90,24 @@ static CGFloat endPointMargin = 1.0f;
     rect.origin.y = y + endPointMargin;
     startPoint.frame = rect;
     [self bringSubviewToFront:startPoint];
+    CGFloat startAngle = -M_PI*4/4;
+    CGFloat endAngle = 0;
+    CGFloat  arc = endAngle-startAngle;
+    CGFloat perAngle=arc/36;
+    for (NSInteger i = 0; i<= 36; i++) {
+        CGFloat startAngel = (startAngle+ perAngle * i);
+        CGFloat endAngel   = startAngel + perAngle/5;
+        float radius = (self.bounds.size.width-_lineWidth*3)/2.0 ;
+        
+        UIBezierPath *tickPath = [UIBezierPath bezierPathWithArcCenter:CGPointMake(centerX, centerY) radius:radius startAngle:startAngel endAngle:endAngel clockwise:YES];
+        CAShapeLayer *perLayer = [CAShapeLayer layer];
+        
+        perLayer.strokeColor = [UIColor cyanColor].CGColor;
+        perLayer.lineWidth   = _lineWidth;
+        
+        perLayer.path = tickPath.CGPath;
+        [self.layer addSublayer:perLayer];
+    }
 }
 
 -(void)setProgress:(float)progress
@@ -133,5 +151,12 @@ static CGFloat endPointMargin = 1.0f;
     _endPoint.frame = rect;
     [self bringSubviewToFront:_endPoint];
 }
+
+
+- (void)drawInContext:(CGContextRef)contextRef
+{
+    
+}
+
 
 @end
