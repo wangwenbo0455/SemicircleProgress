@@ -33,6 +33,7 @@
 		0DBBD3261F25F9B10090CB67 /* UIScrollView+FastKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DBBD3121F25F9B10090CB67 /* UIScrollView+FastKit.m */; };
 		0DBBD3271F25F9B10090CB67 /* UITextView+FastKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DBBD3141F25F9B10090CB67 /* UITextView+FastKit.m */; };
 		0DBBD3281F25F9B10090CB67 /* UIView+FastKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DBBD3161F25F9B10090CB67 /* UIView+FastKit.m */; };
+		0DBBD32A1F2635480090CB67 /* 11.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DBBD3291F2635480090CB67 /* 11.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -88,6 +89,7 @@
 		0DBBD3141F25F9B10090CB67 /* UITextView+FastKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+FastKit.m"; sourceTree = "<group>"; };
 		0DBBD3151F25F9B10090CB67 /* UIView+FastKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FastKit.h"; sourceTree = "<group>"; };
 		0DBBD3161F25F9B10090CB67 /* UIView+FastKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FastKit.m"; sourceTree = "<group>"; };
+		0DBBD3291F2635480090CB67 /* 11.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 11.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 				0DBBD2ED1F25F9B10090CB67 /* FastKit */,
 				0DBBD2D01F258B330090CB67 /* ViewController.h */,
 				0DBBD2D11F258B330090CB67 /* ViewController.m */,
+				0DBBD3291F2635480090CB67 /* 11.jpg */,
 				0DBBD2D31F258B330090CB67 /* Main.storyboard */,
 				0DBBD2D61F258B330090CB67 /* Assets.xcassets */,
 				0DBBD2D81F258B330090CB67 /* LaunchScreen.storyboard */,
@@ -276,6 +279,7 @@
 				0DBBD2DA1F258B330090CB67 /* LaunchScreen.storyboard in Resources */,
 				0DBBD2D71F258B330090CB67 /* Assets.xcassets in Resources */,
 				0DBBD2D51F258B330090CB67 /* Main.storyboard in Resources */,
+				0DBBD32A1F2635480090CB67 /* 11.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

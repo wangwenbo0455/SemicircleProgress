@@ -12,6 +12,7 @@
 @interface ViewController ()
 {
     WBCircle *_circle;
+    UIImageView * _firstImageView;
 }
 @end
 
@@ -55,6 +56,34 @@
     [slider setMinimumValue:0];
     [slider setMinimumTrackTintColor:[UIColor colorWithRed:255.0f/255.0f green:151.0f/255.0f blue:0/255.0f alpha:1]];
     [self.view addSubview:slider];
+    
+    
+    _firstImageView = [[UIImageView alloc]initWithFrame:CGRectMake(10, 300, 200, 200)];
+    [_firstImageView setImage:[UIImage imageNamed:@"11.jpg"]];
+    [self startAnimation];
+    [self.view addSubview:_firstImageView];
+}
+
+- (void)startAnimation {
+    CABasicAnimation *anim = [CABasicAnimation animationWithKeyPath:@"transform"];
+    
+    CATransform3D rotateTransform = CATransform3DMakeRotation(1.57, 0, 0, -1);
+    
+    CATransform3D scaleTransform = CATransform3DMakeScale(1.2, 1.2, 1.2);
+    //(CGFloat tx,CGFloat ty, CGFloat tz ,x,y,z轴的偏移量
+    // CATransform3D positionTransform = CATransform3DMakeTranslation(0, 0, 10); //位置移动
+    CATransform3D combinedTransform =CATransform3DConcat(rotateTransform, scaleTransform); //Concat就是combine的意思
+    //combinedTransform = CATransform3DConcat(combinedTransform, positionTransform); //再combine一次把三个动作连起来
+    
+    [anim setFromValue:[NSValue valueWithCATransform3D:CATransform3DIdentity]]; //放在3D坐标系中最正的位置
+    [anim setToValue:[NSValue valueWithCATransform3D:combinedTransform]];
+    anim.duration = 1.0f;
+    anim.autoreverses = YES;
+    anim.repeatCount = MAXFLOAT;
+    
+    [_firstImageView.layer addAnimation:anim forKey:nil];
+    
+    //[firstImageView.layer setTransform:combinedTransform];  //如果没有这句，layer执行完动画又会返回最初的state
 }
 
 -(void)sliderMethod:(UISlider*)slider
