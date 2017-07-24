@@ -38,6 +38,28 @@ static CGFloat endPointMargin = 1.0f;
     float centerX = self.bounds.size.width/2.0;
     float centerY = self.bounds.size.height/2.0;
     float radius = (self.bounds.size.width-_lineWidth)/2.0;
+    
+    
+    CGFloat startAngle = -M_PI*4/4;
+    CGFloat endAngle = 0;
+    CGFloat  arc = endAngle-startAngle;
+    CGFloat perAngle=arc/36;
+    
+    CGFloat secondLineWigth = _lineWidth;//  线的长度，修改这个 需修改lineradius  酌情修改
+    
+    for (NSInteger i = 0; i<= 36; i++) {
+        CGFloat startAngel = (startAngle+ perAngle * i);
+        CGFloat endAngel   = startAngel + perAngle/10;//  这里改宽度的比例，
+        float lineradius = radius-secondLineWigth;
+        UIBezierPath *tickPath = [UIBezierPath bezierPathWithArcCenter:CGPointMake(centerX, centerY) radius:lineradius startAngle:startAngel endAngle:endAngel clockwise:YES];
+        CAShapeLayer *perLayer = [CAShapeLayer layer];
+        perLayer.strokeColor = [UIColor colorWithHexString:@"#eeeeee"].CGColor;
+        perLayer.lineWidth   = secondLineWigth;
+        perLayer.path = tickPath.CGPath;
+        [self.layer addSublayer:perLayer];
+    }
+    
+    
     UIBezierPath *path = [UIBezierPath bezierPathWithArcCenter:CGPointMake(centerX, centerY) radius:radius startAngle:-CircleDegreeToRadian(-180) endAngle:CircleDegreeToRadian(0) clockwise:YES];
     CAShapeLayer *backLayer = [CAShapeLayer layer];
     backLayer.frame = self.bounds;
@@ -90,25 +112,7 @@ static CGFloat endPointMargin = 1.0f;
     rect.origin.y = y + endPointMargin;
     startPoint.frame = rect;
     [self bringSubviewToFront:startPoint];
-    CGFloat startAngle = -M_PI*4/4;
-    CGFloat endAngle = 0;
-    CGFloat  arc = endAngle-startAngle;
-    CGFloat perAngle=arc/36;
-    
-    
-    CGFloat secondLineWigth = _lineWidth;//  线的长度，修改这个 需修改lineradius  酌情修改
-    
-    for (NSInteger i = 0; i<= 36; i++) {
-        CGFloat startAngel = (startAngle+ perAngle * i);
-        CGFloat endAngel   = startAngel + perAngle/10;//  这里改宽度的比例，
-        float lineradius = radius-secondLineWigth;
-        UIBezierPath *tickPath = [UIBezierPath bezierPathWithArcCenter:CGPointMake(centerX, centerY) radius:lineradius startAngle:startAngel endAngle:endAngel clockwise:YES];
-        CAShapeLayer *perLayer = [CAShapeLayer layer];
-        perLayer.strokeColor = [UIColor colorWithHexString:@"#eeeeee"].CGColor;
-        perLayer.lineWidth   = secondLineWigth;
-        perLayer.path = tickPath.CGPath;
-        [self.layer addSublayer:perLayer];
-    }
+
 }
 
 -(void)setProgress:(float)progress
