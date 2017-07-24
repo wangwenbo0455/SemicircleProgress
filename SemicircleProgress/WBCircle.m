@@ -73,7 +73,7 @@ static CGFloat endPointMargin = 1.0f;
     _endPoint.layer.cornerRadius = _endPoint.bounds.size.width/2;
     [self addSubview:_endPoint];
 
-    //用于显示结束位置的小点
+    //用于显示起始位置的小点
     UIImageView * startPoint = [[UIImageView alloc] init];
     startPoint.frame = CGRectMake(0, 0, _lineWidth - endPointMargin*2,_lineWidth - endPointMargin*2);
     startPoint.backgroundColor = [UIColor whiteColor];
