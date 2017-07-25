@@ -61,7 +61,7 @@
     _firstImageView = [[UIImageView alloc]initWithFrame:CGRectMake(10, 300, 200, 200)];
     [_firstImageView setImage:[UIImage imageNamed:@"11.jpg"]];
     [self startAnimation];
-    [self.view addSubview:_firstImageView];
+//    [self.view addSubview:_firstImageView];
 }
 
 - (void)startAnimation {

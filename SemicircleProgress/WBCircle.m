@@ -103,10 +103,16 @@ static CGFloat endPointMargin = 1.0f;
     startPoint.layer.masksToBounds = true;
     startPoint.layer.cornerRadius = startPoint.bounds.size.width/2;
     [self addSubview:startPoint];
+//    float Leftradius = (self.bounds.size.width-_lineWidth)/2.0;
+//    float x = 0,y = 0;
+    
+    CGFloat angle = M_PI*0.01;//  这里改初始位置，数值为 0---0.5  超0.5需另做处理
     float Leftradius = (self.bounds.size.width-_lineWidth)/2.0;
+    int index = (angle)/M_PI_2;
+    float needAngle = angle - index*M_PI_2;
     float x = 0,y = 0;
-    x = Leftradius - cosf(0.0)*Leftradius;
-    y = Leftradius - sinf(0.0)*Leftradius;
+    x = Leftradius - cosf(needAngle)*Leftradius;
+    y = Leftradius - sinf(needAngle)*Leftradius;
     CGRect rect = startPoint.frame;
     rect.origin.x = x + endPointMargin;
     rect.origin.y = y + endPointMargin;
